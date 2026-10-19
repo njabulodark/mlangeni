@@ -31,6 +31,8 @@
     "sameAs": []
   }
   </script>
+  <link rel="icon" type="image/png" href="logo-mark.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,10 +46,10 @@
             sans: ['Inter', 'sans-serif'],
           },
           colors: {
-            forest: {
-              50: '#f2f7f3', 100: '#dfece2', 200: '#c1d9c7', 300: '#94bfa2',
-              400: '#639d79', 500: '#41805b', 600: '#2f6748', 700: '#26533b',
-              800: '#1f4331', 900: '#1a372a', 950: '#0c1f16',
+            blue: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
+              400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
+              800: '#1e40af', 900: '#1e3a8a', 950: '#172554',
             },
             gold: {
               50: '#fbf7ec', 100: '#f5eacc', 200: '#e9d59a', 300: '#dcb95f',
@@ -105,7 +107,7 @@
     .section-label::before { content: ""; height: 1px; width: 1.75rem; background: currentColor; opacity: .5; }
 
     #top { transition: box-shadow .3s ease, background-color .3s ease; }
-    #top.scrolled { box-shadow: 0 10px 30px rgba(12, 31, 22, .10); }
+    #top.scrolled { box-shadow: 0 10px 30px rgba(23, 37, 84, .10); }
 
     #scroll-progress { transform: scaleX(0); transform-origin: 0 50%; }
 
@@ -120,34 +122,34 @@
   </style>
   <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
-<body class="bg-white font-sans text-forest-900 antialiased">
+<body class="bg-white font-sans text-blue-900 antialiased">
 
   <div id="scroll-progress" class="fixed inset-x-0 top-0 z-[80] h-0.5 bg-gold-400"></div>
 
   <!-- ============ NAV ============ -->
-  <header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-forest-800/10 bg-white/90 backdrop-blur-md">
+  <header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-blue-800/10 bg-white/90 backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
       <a href="#top" class="flex items-center gap-3">
-        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-forest-800 font-display text-lg font-semibold text-gold-300">SK</span>
+        <img src="logo-mark.png" alt="" class="h-12 w-auto object-contain" />
         <span class="leading-tight">
-          <span class="block font-display text-lg font-semibold text-forest-900">SK Mlangeni</span>
-          <span class="block text-[11px] font-semibold uppercase tracking-[0.2em] text-forest-500">Foundation</span>
+          <span class="block font-display text-lg font-semibold text-blue-900">SK Mlangeni</span>
+          <span class="block text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-500">Foundation</span>
         </span>
       </a>
-      <div class="hidden items-center gap-7 text-sm font-medium text-forest-800 lg:flex">
+      <div class="hidden items-center gap-7 text-sm font-medium text-blue-800 lg:flex">
         <a href="#story" class="transition hover:text-gold-600">Our Story</a>
         <a href="#pillars" class="transition hover:text-gold-600">Our Pillars</a>
         <a href="#events" class="transition hover:text-gold-600">Events</a>
         <a href="#support" class="transition hover:text-gold-600">Support Us</a>
       </div>
-      <a href="#support" class="hidden rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-forest-950 shadow-sm transition hover:bg-gold-300 sm:inline-block">
+      <a href="#support" class="hidden rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-blue-950 shadow-sm transition hover:bg-gold-300 sm:inline-block">
         Join the Movement
       </a>
-      <button id="menu-btn" class="rounded-md p-2 text-forest-900 lg:hidden" aria-label="Open menu">
+      <button id="menu-btn" class="rounded-md p-2 text-blue-900 lg:hidden" aria-label="Open menu">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </nav>
-    <div id="mobile-menu" class="hidden border-t border-forest-100 bg-white px-5 py-4 lg:hidden">
+    <div id="mobile-menu" class="hidden border-t border-blue-100 bg-white px-5 py-4 lg:hidden">
       <div class="flex flex-col gap-3 text-sm font-medium">
         <a href="#story" class="py-1">Our Story</a>
         <a href="#pillars" class="py-1">Our Pillars</a>
@@ -158,53 +160,53 @@
   </header>
 
   <!-- ============ HERO ============ -->
-  <section class="relative flex min-h-screen items-center overflow-hidden bg-forest-950 pt-20">
+  <section class="relative flex min-h-screen items-center overflow-hidden bg-blue-950 pt-20">
     <div class="absolute inset-0">
       <img src="events/Sacred Heart Golf Day/Sacred Heart Golf Day Photos/6Q8A6536.webp" alt="Community gathering at the Sacred Heart Golf Day" class="kenburns h-full w-full object-cover opacity-30" />
-      <div class="absolute inset-0 bg-gradient-to-r from-forest-950 via-forest-950/80 to-forest-900/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/80 to-blue-900/30"></div>
     </div>
     <div class="hero-anim relative mx-auto w-full max-w-7xl px-5 py-24 lg:px-8">
       <p class="section-label mb-5">Rooted in KwaZulu-Natal</p>
       <h1 class="max-w-3xl font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
         Help others, <span class="italic text-gold-300">so they can help others.</span>
       </h1>
-      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-forest-100">
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-blue-100">
         The SK Mlangeni Foundation is a movement committed to creating a future where opportunity is shared,
         leadership is developed, and success is passed from one generation to the next, through education,
         meaningful work and personal growth.
       </p>
       <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a href="#support" class="rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold text-forest-950 shadow-lg transition hover:bg-gold-300">Invest in People</a>
+        <a href="#support" class="rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold text-blue-950 shadow-lg transition hover:bg-gold-300">Invest in People</a>
         <a href="#story" class="rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-gold-300 hover:text-gold-300">Read Our Story</a>
       </div>
       <div class="mt-16 grid max-w-2xl grid-cols-2 gap-6 border-t border-white/15 pt-8">
         <div>
           <p class="font-display text-3xl font-semibold text-gold-300">3</p>
-          <p class="mt-1 text-sm text-forest-200">Pillars of Transformation</p>
+          <p class="mt-1 text-sm text-blue-200">Pillars of Transformation</p>
         </div>
         <div>
           <p class="font-display text-3xl font-semibold text-gold-300">∞</p>
-          <p class="mt-1 text-sm text-forest-200">Circle of Impact</p>
+          <p class="mt-1 text-sm text-blue-200">Circle of Impact</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FOUNDER'S MESSAGE ============ -->
-  <section id="story" class="bg-forest-50 py-24">
+  <section id="story" class="bg-blue-50 py-24">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
     <div class="grid gap-14 lg:grid-cols-2 lg:gap-20">
       <div class="reveal">
         <p class="section-label">Founder's Message</p>
-        <h2 class="mt-4 font-display text-3xl font-semibold leading-snug text-forest-900 sm:text-4xl">
+        <h2 class="mt-4 font-display text-3xl font-semibold leading-snug text-blue-900 sm:text-4xl">
           “If no one helps you, it is difficult to realise what you are capable of becoming.”
         </h2>
-        <p class="mt-6 leading-relaxed text-forest-800/80">
+        <p class="mt-6 leading-relaxed text-blue-800/80">
           The SK Mlangeni Foundation was born from a deeply personal understanding that success is rarely
           achieved alone. Along the journey, there were individuals who offered support, guidance and opportunity.
           Through that support, it became clear that growth is not only personal, but something that can be shared.
         </p>
-        <p class="mt-4 leading-relaxed text-forest-800/80">
+        <p class="mt-4 leading-relaxed text-blue-800/80">
           Through my success, I can clearly identify those who played a role in my journey. That reflection
           inspired a responsibility to extend that same support to others. Education, work opportunities and
           personal growth were the pillars that shaped my path, and today, they form the foundation of this
@@ -212,23 +214,23 @@
         </p>
         <p class="mt-8 font-display text-xl italic text-gold-600">The Founder</p>
       </div>
-      <div class="reveal lift overflow-hidden rounded-3xl shadow-md ring-1 ring-forest-100">
+      <div class="reveal lift overflow-hidden rounded-3xl shadow-md ring-1 ring-blue-100">
         <img src="mlangeni.webp" alt="SK Mlangeni, founder of the SK Mlangeni Foundation" width="1200" height="1163" class="h-full min-h-[320px] w-full object-cover" />
       </div>
     </div>
 
-    <div class="reveal lift mt-14 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-forest-100 lg:p-10">
+    <div class="reveal lift mt-14 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-blue-100 lg:p-10">
       <p class="section-label">Our Story</p>
-      <h3 class="mt-4 font-display text-2xl font-semibold text-forest-900">More than the story of one individual</h3>
+      <h3 class="mt-4 font-display text-2xl font-semibold text-blue-900">More than the story of one individual</h3>
       <div class="mt-5 grid gap-6 md:grid-cols-3">
-        <p class="leading-relaxed text-forest-800/80">
+        <p class="leading-relaxed text-blue-800/80">
           Every milestone of the founder's journey was made possible because someone had first invested in his potential.
         </p>
-        <p class="leading-relaxed text-forest-800/80">
+        <p class="leading-relaxed text-blue-800/80">
           Rooted in KwaZulu-Natal, the Foundation seeks to unlock potential that already exists, rather than create dependency.
         </p>
-        <p class="leading-relaxed text-forest-800/80">
-          <span class="font-semibold text-forest-900">Because every act of support has the power to create another.</span>
+        <p class="leading-relaxed text-blue-800/80">
+          <span class="font-semibold text-blue-900">Because every act of support has the power to create another.</span>
         </p>
       </div>
     </div>
@@ -236,16 +238,16 @@
   </section>
 
   <!-- ============ VISION & MISSION ============ -->
-  <section class="bg-forest-900 py-24 text-white">
+  <section class="bg-blue-900 py-24 text-white">
     <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8">
-      <div class="reveal lift rounded-3xl bg-forest-800/60 p-8 ring-1 ring-white/10 lg:p-10">
+      <div class="reveal lift rounded-3xl bg-blue-800/60 p-8 ring-1 ring-white/10 lg:p-10">
         <p class="section-label">Our Vision</p>
         <blockquote class="mt-5 font-display text-2xl font-medium leading-relaxed text-gold-100">
           “To create self-sufficient communities where every individual has access to opportunities that empower
           them to learn, lead, grow and positively transform the lives of others.”
         </blockquote>
       </div>
-      <div class="reveal lift rounded-3xl bg-forest-800/60 p-8 ring-1 ring-white/10 lg:p-10">
+      <div class="reveal lift rounded-3xl bg-blue-800/60 p-8 ring-1 ring-white/10 lg:p-10">
         <p class="section-label">Our Mission</p>
         <blockquote class="mt-5 font-display text-2xl font-medium leading-relaxed text-gold-100">
           “To empower individuals and strengthen communities by providing access to education, mentorship,
@@ -254,7 +256,7 @@
       </div>
     </div>
     <div class="reveal mx-auto mt-12 max-w-7xl px-5 lg:px-8">
-      <p class="text-center text-lg text-forest-100">
+      <p class="text-center text-lg text-blue-100">
         <span class="font-semibold text-gold-300">Education creates knowledge.</span>
         Mentorship builds confidence.
         <span class="font-semibold text-gold-300">Work restores dignity.</span>
@@ -264,63 +266,63 @@
   </section>
 
   <!-- ============ PILLARS ============ -->
-  <section id="pillars" class="bg-forest-50 py-24">
+  <section id="pillars" class="bg-blue-50 py-24">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
       <div class="reveal max-w-2xl">
         <p class="section-label">Our Three Pillars of Transformation</p>
-        <h2 class="mt-4 font-display text-3xl font-semibold text-forest-900 sm:text-4xl">Building strong foundations for lasting change</h2>
-        <p class="mt-5 text-forest-800/80">
+        <h2 class="mt-4 font-display text-3xl font-semibold text-blue-900 sm:text-4xl">Building strong foundations for lasting change</h2>
+        <p class="mt-5 text-blue-800/80">
           The founder recognised that three elements consistently created opportunities for growth and success:
           education, meaningful work and personal growth. Today, those same pillars form the strategic foundation
           upon which the SK Mlangeni Foundation is built.
         </p>
       </div>
       <div class="mt-12 grid gap-8 lg:grid-cols-3">
-        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-forest-100 transition hover:shadow-md">
-          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-forest-100 text-forest-700">
+        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-blue-100 transition hover:shadow-md">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
             <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25c-2-1.5-4.5-2-8-2v13.5c3.5 0 6 .5 8 2 2-1.5 4.5-2 8-2V4.25c-3.5 0-6 .5-8 2z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25V19.75"/></svg>
           </div>
           <p class="mt-6 font-display text-sm italic text-gold-600">Education Creates Opportunity</p>
-          <h3 class="mt-2 font-display text-2xl font-semibold text-forest-900">Pillar One: Education</h3>
-          <p class="mt-3 leading-relaxed text-forest-800/80">
+          <h3 class="mt-2 font-display text-2xl font-semibold text-blue-900">Pillar One: Education</h3>
+          <p class="mt-3 leading-relaxed text-blue-800/80">
             Education is the foundation upon which all other opportunities are built. Every learner deserves
             access to quality education, regardless of background or circumstances.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-forest-800/80">
+          <ul class="mt-5 space-y-2 text-sm text-blue-800/80">
             <li class="flex gap-2"><span class="text-gold-500">•</span> School sponsorships</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Educational resources &amp; learner support</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Career guidance &amp; leadership development</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Scholarship opportunities</li>
           </ul>
         </article>
-        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-forest-100 transition hover:shadow-md">
-          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-forest-100 text-forest-700">
+        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-blue-100 transition hover:shadow-md">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
             <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
           </div>
           <p class="mt-6 font-display text-sm italic text-gold-600">Work Restores Dignity</p>
-          <h3 class="mt-2 font-display text-2xl font-semibold text-forest-900">Pillar Two: Work</h3>
-          <p class="mt-3 leading-relaxed text-forest-800/80">
+          <h3 class="mt-2 font-display text-2xl font-semibold text-blue-900">Pillar Two: Work</h3>
+          <p class="mt-3 leading-relaxed text-blue-800/80">
             Meaningful employment provides dignity, independence and the ability to contribute positively to
             society, reducing dependency while increasing self-reliance.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-forest-800/80">
+          <ul class="mt-5 space-y-2 text-sm text-blue-800/80">
             <li class="flex gap-2"><span class="text-gold-500">•</span> Employability training</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Entrepreneurship development</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Skills development &amp; career readiness</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Professional mentorship &amp; workplace readiness</li>
           </ul>
         </article>
-        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-forest-100 transition hover:shadow-md">
-          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-forest-100 text-forest-700">
+        <article class="reveal lift group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-blue-100 transition hover:shadow-md">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
             <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 7h7v7"/></svg>
           </div>
           <p class="mt-6 font-display text-sm italic text-gold-600">Growth Creates Leaders</p>
-          <h3 class="mt-2 font-display text-2xl font-semibold text-forest-900">Pillar Three: Growth</h3>
-          <p class="mt-3 leading-relaxed text-forest-800/80">
+          <h3 class="mt-2 font-display text-2xl font-semibold text-blue-900">Pillar Three: Growth</h3>
+          <p class="mt-3 leading-relaxed text-blue-800/80">
             Growth extends beyond education and employment: it is continuous personal development, leadership
             and resilience. Growth transforms individuals into leaders, and leaders create stronger communities.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-forest-800/80">
+          <ul class="mt-5 space-y-2 text-sm text-blue-800/80">
             <li class="flex gap-2"><span class="text-gold-500">•</span> Leadership &amp; personal development</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Community leadership &amp; financial literacy</li>
             <li class="flex gap-2"><span class="text-gold-500">•</span> Mentorship</li>
@@ -328,7 +330,7 @@
           </ul>
         </article>
       </div>
-      <div class="reveal lift mt-12 rounded-3xl bg-forest-900 p-8 text-center text-forest-100 lg:p-10">
+      <div class="reveal lift mt-12 rounded-3xl bg-blue-900 p-8 text-center text-blue-100 lg:p-10">
         <p class="font-display text-lg leading-relaxed sm:text-xl">
           Education creates knowledge → Knowledge creates opportunity → Opportunity leads to meaningful work →
           <span class="text-gold-300">Meaningful work creates confidence → Personal growth develops leadership →
@@ -339,32 +341,32 @@
   </section>
 
   <!-- ============ EVENTS ============ -->
-  <section id="events" class="bg-forest-950 py-24 text-white">
+  <section id="events" class="bg-blue-950 py-24 text-white">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
       <div class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div class="max-w-2xl">
           <p class="section-label">Events</p>
           <h2 class="mt-4 font-display text-3xl font-semibold text-white sm:text-4xl">Our Events</h2>
-          <p class="mt-5 leading-relaxed text-forest-100">
+          <p class="mt-5 leading-relaxed text-blue-100">
             A day of partnership, generosity and community spirit, bringing businesses, families and supporters
             together to fuel the Foundation's mission of education, leadership and empowerment. Select an event
             below to watch the video and browse its photos.
           </p>
         </div>
-        <a href="#support" class="shrink-0 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-forest-950 transition hover:bg-gold-300">Partner With Us</a>
+        <a href="#support" class="shrink-0 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-blue-950 transition hover:bg-gold-300">Partner With Us</a>
       </div>
 
       <div id="event-tabs" class="reveal mt-10 flex flex-wrap gap-3"></div>
 
-      <div class="reveal lift mt-8 overflow-hidden rounded-3xl bg-forest-900/60 ring-1 ring-white/10">
-        <video id="event-video" controls preload="none" class="max-h-[520px] w-full bg-forest-950 object-cover"></video>
+      <div class="reveal lift mt-8 overflow-hidden rounded-3xl bg-blue-900/60 ring-1 ring-white/10">
+        <video id="event-video" controls preload="none" class="max-h-[520px] w-full bg-blue-950 object-cover"></video>
       </div>
 
       <h3 class="mt-14 font-display text-xl font-semibold text-gold-300">Gallery</h3>
-      <p id="gallery-count" class="mt-2 text-xs text-forest-300"></p>
+      <p id="gallery-count" class="mt-2 text-xs text-blue-300"></p>
       <div id="gallery" class="reveal mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"></div>
       <div class="mt-8 flex justify-center">
-        <button id="gallery-toggle" class="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-forest-100 transition hover:border-gold-300 hover:text-gold-300">See more</button>
+        <button id="gallery-toggle" class="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-blue-100 transition hover:border-gold-300 hover:text-gold-300">See more</button>
       </div>
     </div>
   </section>
@@ -375,20 +377,20 @@
       <div class="grid gap-12 lg:grid-cols-2">
         <div class="reveal">
           <p class="section-label">Support the Movement</p>
-          <h2 class="mt-4 font-display text-3xl font-semibold text-forest-900 sm:text-4xl">Creating a legacy together</h2>
-          <p class="mt-6 leading-relaxed text-forest-800/80">
+          <h2 class="mt-4 font-display text-3xl font-semibold text-blue-900 sm:text-4xl">Creating a legacy together</h2>
+          <p class="mt-6 leading-relaxed text-blue-800/80">
             “When we help one person, we create the opportunity for that person to help many others.” Lasting
              change cannot be achieved by one organisation alone; it requires people, businesses, institutions
             and communities working together towards a shared purpose.
           </p>
-          <p class="mt-4 leading-relaxed text-forest-800/80">
+          <p class="mt-4 leading-relaxed text-blue-800/80">
             Every contribution matters. Every partnership creates opportunity. Every opportunity creates hope.
             By partnering with the Foundation, you are not simply supporting a programme.
-            <span class="font-semibold text-forest-900">You are investing in people.</span>
+            <span class="font-semibold text-blue-900">You are investing in people.</span>
           </p>
-          <div class="mt-8 rounded-2xl bg-forest-50 p-6 ring-1 ring-forest-100">
-            <p class="font-semibold text-forest-900">Ways to support</p>
-            <ul class="mt-3 grid gap-2 text-sm text-forest-800/80 sm:grid-cols-2">
+          <div class="mt-8 rounded-2xl bg-blue-50 p-6 ring-1 ring-blue-100">
+            <p class="font-semibold text-blue-900">Ways to support</p>
+            <ul class="mt-3 grid gap-2 text-sm text-blue-800/80 sm:grid-cols-2">
               <li>• Corporate sponsorships &amp; CSI</li>
               <li>• Monthly &amp; once-off giving</li>
               <li>• School &amp; scholarship sponsorship</li>
@@ -398,9 +400,9 @@
             </ul>
           </div>
         </div>
-        <div class="reveal lift rounded-3xl bg-forest-900 p-8 text-white lg:p-10">
+        <div class="reveal lift rounded-3xl bg-blue-900 p-8 text-white lg:p-10">
           <h3 class="font-display text-2xl font-semibold text-gold-300">Together, we can</h3>
-          <ul class="mt-6 space-y-4 text-lg text-forest-100">
+          <ul class="mt-6 space-y-4 text-lg text-blue-100">
             <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400"></span> Strengthen schools.</li>
             <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400"></span> Develop leaders.</li>
             <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400"></span> Create opportunities.</li>
@@ -408,10 +410,10 @@
             <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400"></span> Leave a legacy that extends far beyond our own lifetime.</li>
           </ul>
           <form class="mt-8 space-y-3" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you, we will be in touch!';">
-            <input type="text" required placeholder="Your name" class="w-full rounded-xl border border-white/20 bg-forest-800/60 px-4 py-3 text-sm text-white placeholder-forest-200 outline-none transition focus:border-gold-400" />
-            <input type="email" required placeholder="Email address" class="w-full rounded-xl border border-white/20 bg-forest-800/60 px-4 py-3 text-sm text-white placeholder-forest-200 outline-none transition focus:border-gold-400" />
-            <textarea rows="3" placeholder="How would you like to get involved?" class="w-full rounded-xl border border-white/20 bg-forest-800/60 px-4 py-3 text-sm text-white placeholder-forest-200 outline-none transition focus:border-gold-400"></textarea>
-            <button type="submit" class="w-full rounded-xl bg-gold-400 px-6 py-3.5 text-sm font-semibold text-forest-950 transition hover:bg-gold-300">Join the Movement</button>
+            <input type="text" required placeholder="Your name" class="w-full rounded-xl border border-white/20 bg-blue-800/60 px-4 py-3 text-sm text-white placeholder-blue-200 outline-none transition focus:border-gold-400" />
+            <input type="email" required placeholder="Email address" class="w-full rounded-xl border border-white/20 bg-blue-800/60 px-4 py-3 text-sm text-white placeholder-blue-200 outline-none transition focus:border-gold-400" />
+            <textarea rows="3" placeholder="How would you like to get involved?" class="w-full rounded-xl border border-white/20 bg-blue-800/60 px-4 py-3 text-sm text-white placeholder-blue-200 outline-none transition focus:border-gold-400"></textarea>
+            <button type="submit" class="w-full rounded-xl bg-gold-400 px-6 py-3.5 text-sm font-semibold text-blue-950 transition hover:bg-gold-300">Join the Movement</button>
           </form>
         </div>
       </div>
@@ -419,15 +421,17 @@
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="bg-forest-950 py-14 text-forest-200">
+  <footer class="bg-blue-950 py-14 text-blue-200">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
       <div class="flex flex-col gap-10 md:flex-row md:justify-between">
         <div class="max-w-sm">
           <div class="flex items-center gap-3">
-            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-forest-800 font-display text-lg font-semibold text-gold-300">SK</span>
+            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-white p-1.5">
+              <img src="logo-mark.png" alt="" class="h-full w-full object-contain" />
+            </span>
             <span class="leading-tight">
               <span class="block font-display text-lg font-semibold text-white">SK Mlangeni</span>
-              <span class="block text-[11px] font-semibold uppercase tracking-[0.2em] text-forest-300">Foundation</span>
+              <span class="block text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-300">Foundation</span>
             </span>
           </div>
           <p class="mt-4 text-sm leading-relaxed">
@@ -436,7 +440,7 @@
           </p>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-forest-300">Explore</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">Explore</p>
           <div class="mt-4 grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
             <a href="#story" class="transition hover:text-gold-300">Our Story</a>
             <a href="#pillars" class="transition hover:text-gold-300">Our Pillars</a>
@@ -445,11 +449,11 @@
           </div>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-forest-300">Our Promise</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">Our Promise</p>
           <p class="mt-4 font-display text-lg italic text-gold-300">“Help others, so they can help others.”</p>
         </div>
       </div>
-      <div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-forest-300 sm:flex-row sm:items-center sm:justify-between">
+      <div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-blue-300 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 SK Mlangeni Foundation. All rights reserved.</p>
         <div class="flex gap-6">
           <a href="privacy-policy.html" class="transition hover:text-gold-300">Privacy Policy</a>
@@ -475,16 +479,16 @@
   </div>
 
   <!-- Cookie consent banner -->
-  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[70] hidden border-t border-forest-100 bg-white/95 p-5 backdrop-blur-md shadow-2xl">
+  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[70] hidden border-t border-blue-100 bg-white/95 p-5 backdrop-blur-md shadow-2xl">
     <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
-      <p class="max-w-2xl text-sm text-forest-800">
+      <p class="max-w-2xl text-sm text-blue-800">
         We use cookies to improve your experience and understand how you use our website. By clicking
         “Accept All”, you consent to non-essential cookies. See our
         <a href="privacy-policy.html" class="font-semibold text-gold-600 hover:underline">Privacy Policy</a> for details.
       </p>
       <div class="flex shrink-0 gap-3">
-        <button id="cookie-decline" class="rounded-full border border-forest-300 px-5 py-2.5 text-sm font-semibold text-forest-800 transition hover:border-forest-500">Essential Only</button>
-        <button id="cookie-accept" class="rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-forest-950 transition hover:bg-gold-300">Accept All</button>
+        <button id="cookie-decline" class="rounded-full border border-blue-300 px-5 py-2.5 text-sm font-semibold text-blue-800 transition hover:border-blue-500">Essential Only</button>
+        <button id="cookie-accept" class="rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-blue-950 transition hover:bg-gold-300">Accept All</button>
       </div>
     </div>
   </div>
@@ -555,20 +559,20 @@
       }
       tabsEl.querySelectorAll('button').forEach((b, j) => {
         b.className = j === i
-          ? 'rounded-full bg-gold-400 px-6 py-2.5 text-sm font-semibold text-forest-950 transition'
-          : 'rounded-full border border-white/25 px-6 py-2.5 text-sm font-semibold text-forest-100 transition hover:border-gold-300 hover:text-gold-300';
+          ? 'rounded-full bg-gold-400 px-6 py-2.5 text-sm font-semibold text-blue-950 transition'
+          : 'rounded-full border border-white/25 px-6 py-2.5 text-sm font-semibold text-blue-100 transition hover:border-gold-300 hover:text-gold-300';
       });
       videoEl.poster = events[i].poster;
       videoEl.src = events[i].video;
       gallery.innerHTML = '';
       photos.forEach((src, p) => {
         const btn = document.createElement('button');
-        btn.className = 'group relative aspect-square overflow-hidden rounded-xl bg-forest-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-gold-400';
+        btn.className = 'group relative aspect-square overflow-hidden rounded-xl bg-blue-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-gold-400';
         btn.innerHTML = `<img data-src="${src}" alt="Sacred Heart Golf Day, ${events[i].name}, photo ${p + 1}" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-500 group-hover:scale-105" />
-          <span class="absolute inset-0 grid place-items-center text-forest-600">
+          <span class="absolute inset-0 grid place-items-center text-blue-600">
             <svg class="h-6 w-6 animate-pulse" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z"/></svg>
           </span>
-          <span class="absolute inset-0 bg-forest-950/0 transition group-hover:bg-forest-950/20"></span>`;
+          <span class="absolute inset-0 bg-blue-950/0 transition group-hover:bg-blue-950/20"></span>`;
         const img = btn.querySelector('img');
         img.addEventListener('load', () => img.classList.remove('opacity-0'));
         btn.addEventListener('click', () => openLB(p));
