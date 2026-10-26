@@ -602,12 +602,15 @@
         const btn = document.createElement('button');
         btn.className = 'group relative aspect-square overflow-hidden rounded-xl bg-blue-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-gold-400';
         btn.innerHTML = `<img data-src="${src}" alt="${events[i].name}, photo ${p + 1}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-500 group-hover:scale-105" />
-          <span class="absolute inset-0 grid place-items-center text-blue-600">
+          <span data-placeholder class="absolute inset-0 grid place-items-center text-blue-600" aria-hidden="true">
             <svg class="h-6 w-6 animate-pulse" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z"/></svg>
           </span>
           <span class="absolute inset-0 bg-blue-950/0 transition group-hover:bg-blue-950/20"></span>`;
         const img = btn.querySelector('img');
-        img.addEventListener('load', () => img.classList.remove('opacity-0'));
+        img.addEventListener('load', () => {
+          img.classList.remove('opacity-0');
+          btn.querySelector('[data-placeholder]')?.remove();
+        });
         btn.addEventListener('click', () => openLB(p));
         gallery.appendChild(btn);
         io.observe(btn);
