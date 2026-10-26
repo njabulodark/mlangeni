@@ -350,7 +350,7 @@
           <p class="mt-5 leading-relaxed text-blue-100">
             A day of partnership, generosity and community spirit, bringing businesses, families and supporters
             together to fuel the Foundation's mission of education, leadership and empowerment. Select an event
-            below to watch the video and browse its photos.
+            below to browse its photos and watch the highlights.
           </p>
         </div>
         <a href="#support" class="shrink-0 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-blue-950 transition hover:bg-gold-300">Partner With Us</a>
@@ -358,7 +358,7 @@
 
       <div id="event-tabs" class="reveal mt-10 flex flex-wrap gap-3"></div>
 
-      <div class="reveal lift mt-8 overflow-hidden rounded-3xl bg-blue-900/60 ring-1 ring-white/10">
+      <div id="event-video-wrap" class="reveal lift mt-8 overflow-hidden rounded-3xl bg-blue-900/60 ring-1 ring-white/10">
         <video id="event-video" controls preload="none" class="max-h-[520px] w-full bg-blue-950 object-cover"></video>
       </div>
 
@@ -508,12 +508,35 @@
   <script>
     const events = [
       {
+        name: 'Anton Lembede Golf Day',
+        label: 'Anton Lembede Golf Day',
+        date: '23 May 2026',
+        photoDir: 'events/Anton Lembede Golf day/Anton Lembede Photos',
+        video: null,
+        poster: 'events/Anton Lembede Golf day/Anton Lembede Photos/DJI_0041.webp',
+        filePrefix: '',
+        featuredNums: 'DJI_0041,DJI_0058,DJI_0069,IMG_0011,IMG_0035,IMG_0053,IMG_0130,IMG_9688,IMG_9663,IMG_9737,IMG_9801,IMG_9823'.split(','),
+        allNums: 'DJI_0032,DJI_0033,DJI_0034,DJI_0036,DJI_0037,DJI_0039,DJI_0041,DJI_0043,DJI_0045,DJI_0046,DJI_0047,DJI_0049,DJI_0051,DJI_0058,DJI_0059,DJI_0063,DJI_0064,DJI_0065,DJI_0068,DJI_0069,DJI_0072,DJI_0074,DJI_0078,DJI_0079,DJI_0081,DJI_0083,DJI_0084,DJI_0085,DJI_0086,IMG_0001,IMG_0002,IMG_0003,IMG_0004,IMG_0005,IMG_0006,IMG_0009,IMG_0010,IMG_0011,IMG_0012,IMG_0014,IMG_0018,IMG_0020,IMG_0023,IMG_0025,IMG_0027,IMG_0029,IMG_0030,IMG_0035,IMG_0037,IMG_0038,IMG_0039,IMG_0045,IMG_0046,IMG_0047,IMG_0048,IMG_0050,IMG_0053,IMG_0056,IMG_0058,IMG_0060,IMG_0061,IMG_0063,IMG_0067,IMG_0069,IMG_0070,IMG_0072,IMG_0074,IMG_0076,IMG_0078,IMG_0080,IMG_0081,IMG_0082,IMG_0084,IMG_0087,IMG_0088,IMG_0089,IMG_0090,IMG_0092,IMG_0093,IMG_0094,IMG_0096,IMG_0097,IMG_0099,IMG_0100,IMG_0101,IMG_0102,IMG_0103,IMG_0111,IMG_0112,IMG_0113,IMG_0114,IMG_0115,IMG_0117,IMG_0118,IMG_0119,IMG_0120,IMG_0121,IMG_0122,IMG_0123,IMG_0124,IMG_0125,IMG_0126,IMG_0127,IMG_0128,IMG_0129,IMG_0130,IMG_0132,IMG_0133,IMG_0134,IMG_0135,IMG_0136,IMG_0138,IMG_0141,IMG_0143,IMG_0144,IMG_0146,IMG_0148,IMG_0149,IMG_0150,IMG_0151,IMG_9643,IMG_9644,IMG_9646,IMG_9657,IMG_9659,IMG_9660,IMG_9661,IMG_9663,IMG_9668,IMG_9669,IMG_9671,IMG_9675,IMG_9677,IMG_9682,IMG_9686,IMG_9687,IMG_9688,IMG_9689,IMG_9690,IMG_9693,IMG_9695,IMG_9696,IMG_9697,IMG_9700,IMG_9703,IMG_9704,IMG_9705,IMG_9708,IMG_9709,IMG_9710,IMG_9711,IMG_9712,IMG_9716,IMG_9718,IMG_9722,IMG_9723,IMG_9730,IMG_9732,IMG_9734,IMG_9737,IMG_9738,IMG_9740,IMG_9742,IMG_9743,IMG_9745,IMG_9749,IMG_9752,IMG_9754,IMG_9755,IMG_9756,IMG_9757,IMG_9758,IMG_9759,IMG_9761,IMG_9763,IMG_9764,IMG_9765,IMG_9766,IMG_9768,IMG_9770,IMG_9771,IMG_9772,IMG_9773,IMG_9774,IMG_9775,IMG_9776,IMG_9777,IMG_9779,IMG_9780,IMG_9781,IMG_9783,IMG_9784,IMG_9786,IMG_9787,IMG_9788,IMG_9790,IMG_9791,IMG_9792,IMG_9797,IMG_9798,IMG_9800,IMG_9801,IMG_9803,IMG_9804,IMG_9810,IMG_9811,IMG_9823,IMG_9837,IMG_9853,IMG_9856,IMG_9859,IMG_9865,IMG_9871,IMG_9874,IMG_9875,IMG_9889,IMG_9890,IMG_9900,IMG_9913,IMG_9921,IMG_9923,IMG_9926,IMG_9936,IMG_9939,IMG_9948,IMG_9950,IMG_9960,IMG_9964,IMG_9966,IMG_9967,IMG_9974,IMG_9976,IMG_9981,IMG_9983,IMG_9990,IMG_9995'.split(',')
+      },
+      {
+        name: 'Ohlange Development Trust Gala Dinner',
+        label: 'Ohlange Gala Dinner',
+        date: '4-6 September 2026',
+        photoDir: 'events/Ohlange Development Trust. Gala dinner/Ohlange Gala Dinner Photos',
+        video: null,
+        poster: 'events/Ohlange Development Trust. Gala dinner/Ohlange Gala Dinner Photos/_ADO5437.webp',
+        filePrefix: '',
+        featuredNums: '_ADO5187,_ADO5133,_ADO5173,_ADO5240,_ADO5222,_ADO5262,_ADO5312,_ADO5458,_ADO5273,_ADO5437,_ADO5158,_ADO5164'.split(','),
+        allNums: '_ADO5133,_ADO5135,_ADO5136,_ADO5137,_ADO5140,_ADO5141,_ADO5143,_ADO5145,_ADO5150,_ADO5153,_ADO5155,_ADO5156,_ADO5158,_ADO5160,_ADO5163,_ADO5164,_ADO5166,_ADO5170,_ADO5171,_ADO5173,_ADO5174,_ADO5175,_ADO5176,_ADO5177,_ADO5179,_ADO5180,_ADO5183,_ADO5184,_ADO5186,_ADO5187,_ADO5188,_ADO5189,_ADO5190,_ADO5191,_ADO5192,_ADO5194,_ADO5196,_ADO5197,_ADO5199,_ADO5202,_ADO5203,_ADO5204,_ADO5207,_ADO5209,_ADO5212,_ADO5214,_ADO5215,_ADO5217,_ADO5218,_ADO5222,_ADO5224,_ADO5225,_ADO5227,_ADO5228,_ADO5229,_ADO5231,_ADO5232,_ADO5234,_ADO5235,_ADO5236,_ADO5240,_ADO5242,_ADO5244,_ADO5245,_ADO5248,_ADO5252,_ADO5254,_ADO5256,_ADO5262,_ADO5266,_ADO5268,_ADO5273,_ADO5276,_ADO5277,_ADO5280,_ADO5286,_ADO5287,_ADO5289,_ADO5293,_ADO5294,_ADO5298,_ADO5300,_ADO5302,_ADO5304,_ADO5306,_ADO5308,_ADO5311,_ADO5312,_ADO5315,_ADO5316,_ADO5317,_ADO5318,_ADO5319,_ADO5320,_ADO5321,_ADO5322,_ADO5324,_ADO5325,_ADO5326,_ADO5328,_ADO5329,_ADO5330,_ADO5331,_ADO5333,_ADO5334,_ADO5335,_ADO5337,_ADO5338,_ADO5339,_ADO5340,_ADO5344,_ADO5348,_ADO5349,_ADO5353,_ADO5355,_ADO5356,_ADO5360,_ADO5363,_ADO5364,_ADO5367,_ADO5370,_ADO5375,_ADO5377,_ADO5379,_ADO5382,_ADO5383,_ADO5387,_ADO5389,_ADO5391,_ADO5397,_ADO5398,_ADO5401,_ADO5405,_ADO5406,_ADO5407,_ADO5410,_ADO5412,_ADO5413,_ADO5416,_ADO5417,_ADO5419,_ADO5421,_ADO5431,_ADO5435,_ADO5437,_ADO5439,_ADO5442,_ADO5443,_ADO5444,_ADO5445,_ADO5456,_ADO5458,_ADO5459,_ADO5465'.split(',')
+      },
+      {
         name: 'King Bhekuzulu HS 60th Celebration Golf Day',
         label: 'King Bhekuzulu Golf Day',
         date: '2026',
         photoDir: 'events/King Bhekuzulu Golf Day/_King Bhekuzulu Photos',
         video: 'events/King Bhekuzulu Golf Day/_King Bhekuzulu Videos/King Bhekuzulu HS 60th Celebration Golf Day.mp4',
         poster: 'events/King Bhekuzulu Golf Day/_King Bhekuzulu Photos/6Q8A1906.webp',
+        filePrefix: '6Q8A',
         featuredNums: '1906,1952,2062,2272,2487,2664,2832,2903,2959,2996,3074,3124'.split(','),
         allNums: '1906,1916,1925,1942,1952,1964,1972,1999,2023,2062,2091,2135,2189,2272,2308,2342,2375,2420,2487,2540,2575,2602,2664,2706,2730,2755,2782,2832,2876,2881,2887,2903,2918,2925,2933,2949,2959,2968,2977,2991,2996,3013,3031,3049,3061,3074,3087,3101,3109,3124'.split(',')
       },
@@ -524,19 +547,21 @@
         photoDir: 'events/Sacred Heart Golf Day/Sacred Heart Golf Day Photos',
         video: 'events/Sacred Heart Golf Day/Sacred Heart Golf Day Video/HSH Gold Day 2026.mp4',
         poster: 'events/Sacred Heart Golf Day/Sacred Heart Golf Day Photos/6Q8A6536.webp',
+        filePrefix: '6Q8A',
         featuredNums: '6536,6618,6718,6823,6940,7069,7209,7294,7335,7356,7392,7435'.split(','),
         allNums: '6536,6549,6576,6605,6618,6637,6661,6671,6702,6718,6747,6769,6791,6823,6845,6877,6883,6905,6940,6966,7011,7027,7069,7103,7119,7146,7180,7209,7228,7264,7278,7294,7302,7315,7319,7324,7335,7339,7349,7354,7356,7359,7367,7372,7383,7392,7404,7414,7425,7435'.split(',')
       }
     ];
 
     events.forEach(e => {
-      const path = n => `${e.photoDir}/6Q8A${n}.webp`;
+      const path = n => `${e.photoDir}/${e.filePrefix}${n}.webp`;
       e.photos = e.featuredNums.map(path);
       e.all = e.allNums.map(path);
     });
 
     const tabsEl = document.getElementById('event-tabs');
     const videoEl = document.getElementById('event-video');
+    const videoWrap = document.getElementById('event-video-wrap');
     const gallery = document.getElementById('gallery');
     const galleryCount = document.getElementById('gallery-count');
     const galleryToggle = document.getElementById('gallery-toggle');
@@ -562,13 +587,21 @@
           ? 'rounded-full bg-gold-400 px-6 py-2.5 text-sm font-semibold text-blue-950 transition'
           : 'rounded-full border border-white/25 px-6 py-2.5 text-sm font-semibold text-blue-100 transition hover:border-gold-300 hover:text-gold-300';
       });
-      videoEl.poster = events[i].poster;
-      videoEl.src = events[i].video;
+      if (events[i].video) {
+        videoWrap.classList.remove('hidden');
+        videoEl.poster = events[i].poster;
+        videoEl.src = events[i].video;
+      } else {
+        videoWrap.classList.add('hidden');
+        videoEl.pause();
+        videoEl.removeAttribute('src');
+        videoEl.load();
+      }
       gallery.innerHTML = '';
       photos.forEach((src, p) => {
         const btn = document.createElement('button');
         btn.className = 'group relative aspect-square overflow-hidden rounded-xl bg-blue-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-gold-400';
-        btn.innerHTML = `<img data-src="${src}" alt="Sacred Heart Golf Day, ${events[i].name}, photo ${p + 1}" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-500 group-hover:scale-105" />
+        btn.innerHTML = `<img data-src="${src}" alt="${events[i].name}, photo ${p + 1}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-500 group-hover:scale-105" />
           <span class="absolute inset-0 grid place-items-center text-blue-600">
             <svg class="h-6 w-6 animate-pulse" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z"/></svg>
           </span>
